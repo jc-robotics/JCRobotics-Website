@@ -18,7 +18,7 @@ JC Robotics is a passionate team of robotics enthusiasts who compete in FTC (Fir
 To get started with our website, simply visit [www.URLPENDING.com](https://www.example.com) and navigate through the different sections. Feel free to explore our projects, read our blog posts, and get in touch with us if you have any questions or opportunities for collaboration.
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md). Feel free to use, modify, and distribute the code as per the terms of the license.
+This project is licensed under the [Closed Source License](LICENSE.md). You cannot, modify, and distribute the code as per the terms of the license.
 
 ## Contact
 
