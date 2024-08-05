@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --text: #040316;
+    --background: #fbfbfe;
+    --primary: #140d9c;
+    --secondary: #dddbff;
+    --accent: #443dff;
+  }
+  .dark {
+    --text: #eae9fc;
+    --background: #010104;
+    --primary: #6a63f2;
+    --secondary: #020024;
+    --accent: #0600c2;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+#darkMode {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}/*# sourceMappingURL=Main.css.map */
