@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+	  --text: #080811;
+	  --background: #ececf8;
+	  --primary: #1e1a75;
+	  --secondary: #dddbff;
+	  --accent: #1409dc;
+	}
+	.dark {
+	  --text: #ececf6;
+	  --background: #070714;
+	  --primary: #8c88e5;
+	  --secondary: #020024;
+	  --accent: #2d22f6;
+	}
+}
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tilt+Warp&display=swap');
+
+body {
+    font-family: 'noto sans', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#darkMode{
+	position: fixed;
+	right: 1rem;
+	top: 1rem;
+	background-color: var(--primary);
+	color: var(--background);
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: background-color 0.5s, color 0.5s;
+}

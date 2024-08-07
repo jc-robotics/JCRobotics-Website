@@ -1,45 +1,96 @@
-//This Project uses tailwindcss for styling
+// -------------------- Custom Styles -------------------- //
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@use 'sass:color';
 
-@layer base {
-    :root {
-    	--text: #040316;
-    	--background: #fbfbfe;
-    	--primary: #140d9c;
-    	--secondary: #dddbff;
-    	--accent: #443dff;
-    }
-    .dark {
-    	--text: #eae9fc;
-    	--background: #010104;
-    	--primary: #6a63f2;
-    	--secondary: #020024;
-    	--accent: #0600c2;
-    }
-}
-
-@import "../../node_modules/bootstrap/scss/bootstrap"; 
-
-//Body
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background);
-    color: var(--text);
-    transition: background-color 0.5s, color 0.5s;
-}
-
-#darkMode{
-	//This is a button
+FAnim{
+	//Fullscreen
 	position: fixed;
-	right: 1rem;
-	top: 1rem;
-	background-color: var(--primary);
-	color: var(--background);
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
-	cursor: pointer;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+SCROLLFORCE{
+	//This is a div
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200rem;
+	z-index: -10;
+	overflow: visible;
+
+}
+
+FirstSight{
+	//This is a div
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+	transition: opacity 0.5s;
+	opacity: 0;
+	&.visible{
+		opacity: 1;
+	}
+}
+
+.Moto{
+	font-size: 3.5rem;
+	font-weight: 500;
+	font-family: 'tilt warp', sans-serif;
+
+	//Put all objects on the same line
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 2%;
+
+	//rotate slightly
+	transform: rotate(-1deg);
+}
+
+
+
+//Cool blocks
+Block{
+	background-color: var(--secondary);
+	color: var(--text);
+	padding: 1rem;
+	border-radius: 0.4rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 	transition: background-color 0.5s, color 0.5s;
+}
+#B1{
+	background-color: var(--primary);
+	width: 50rem;
+	height: 1.4em;
+
+	position: absolute;
+	padding-top: 2%;
+	z-index: -1;
+
+	transform: translateX(-22%);
+}
+
+#B2{
+	background-color: var(--primary) ;
+	width: 25rem;
+	height: 1.2em;
+
+	position: absolute;
+	padding-top: 2%;
+	z-index: -1;
+
+	transform: translate(95%, 2%) rotate(-0.5deg);
 }

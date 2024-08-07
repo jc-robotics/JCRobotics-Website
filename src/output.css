@@ -447,19 +447,19 @@ video {
 }
 
 :root {
-  --text: #040316;
-  --background: #fbfbfe;
-  --primary: #140d9c;
+  --text: #080811;
+  --background: #ececf8;
+  --primary: #1e1a75;
   --secondary: #dddbff;
-  --accent: #443dff;
+  --accent: #1409dc;
 }
 
 .dark {
-  --text: #eae9fc;
-  --background: #010104;
-  --primary: #6a63f2;
+  --text: #ececf6;
+  --background: #070714;
+  --primary: #8c88e5;
   --secondary: #020024;
-  --accent: #0600c2;
+  --accent: #2d22f6;
 }
 
 *, ::before, ::after {
@@ -584,13 +584,13 @@ video {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'noto sans', sans-serif;
   background-color: var(--background);
   color: var(--text);
   transition: background-color 0.5s, color 0.5s;
 }
 
-#darkMode {
+#darkMode{
   position: fixed;
   right: 1rem;
   top: 1rem;
@@ -601,4 +601,3 @@ body {
   cursor: pointer;
   transition: background-color 0.5s, color 0.5s;
 }
-/*# sourceMappingURL=output.css.map */

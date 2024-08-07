@@ -1,4 +1,4 @@
-let DarkMode = false;
+let DarkMode = true;
 
 function ToggleDarkModeClass() {
     // Select the HTML element wit ID "ROOT"

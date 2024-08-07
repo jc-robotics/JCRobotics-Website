@@ -1,37 +1,76 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer base {
-  :root {
-    --text: #040316;
-    --background: #fbfbfe;
-    --primary: #140d9c;
-    --secondary: #dddbff;
-    --accent: #443dff;
-  }
-  .dark {
-    --text: #eae9fc;
-    --background: #010104;
-    --primary: #6a63f2;
-    --secondary: #020024;
-    --accent: #0600c2;
-  }
+FAnim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--background);
+
+SCROLLFORCE {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200rem;
+  z-index: -10;
+  overflow: visible;
+}
+
+FirstSight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+FirstSight.visible {
+  opacity: 1;
+}
+
+.Moto {
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: "tilt warp", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  transform: rotate(-1deg);
+}
+
+Block {
+  background-color: var(--secondary);
   color: var(--text);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   transition: background-color 0.5s, color 0.5s;
 }
 
-#darkMode {
-  position: fixed;
-  right: 1rem;
-  top: 1rem;
+#B1 {
   background-color: var(--primary);
-  color: var(--background);
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.5s, color 0.5s;
+  width: 50rem;
+  height: 1.4em;
+  position: absolute;
+  padding-top: 2%;
+  z-index: -1;
+  transform: translateX(-22%);
+}
+
+#B2 {
+  background-color: var(--primary);
+  width: 25rem;
+  height: 1.2em;
+  position: absolute;
+  padding-top: 2%;
+  z-index: -1;
+  transform: translate(95%, 2%) rotate(-0.5deg);
 }/*# sourceMappingURL=Main.css.map */
